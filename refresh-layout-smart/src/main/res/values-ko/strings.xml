@@ -1,0 +1,21 @@
+<resources>
+    <string name="srl_header_pulling">아래로 당겨 새로 고침</string>
+    <string name="srl_header_refreshing">상쾌…</string>
+    <string name="srl_header_loading">하단 로딩이 완료될 때까지 기다리세요…</string>
+    <string name="srl_header_release">릴리스 새로 고침</string>
+    <string name="srl_header_finish">새로고침 완료</string>
+    <string name="srl_header_failed">새로고침 실패</string>
+    <string name="srl_header_update">마지막 업데이트 M 월 d 일 HH:mm</string>
+    <string name="srl_header_secondary">2층으로 방출</string>
+
+    <string name="srl_footer_pulling">더 로드하려면 위로 당겨</string>
+    <string name="srl_footer_release">지금 로드 해제</string>
+    <string name="srl_footer_loading">로딩 중…</string>
+    <string name="srl_footer_refreshing">헤더 새로 고침이 완료될 때까지 기다립니다.…</string>
+    <string name="srl_footer_finish">다운로드 완료</string>
+    <string name="srl_footer_failed">불러 오지 못했습니다</string>
+    <string name="srl_footer_nothing">더 이상 데이터가 없습니다</string>
+
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="srl_component_falsify" formatted="false">%s 虚假区域\n代表运行时拖动的高度【%.1fdp】 \n而不会显示任何东西</string>
+</resources>

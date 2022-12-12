@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    tools:background="#00000000"
+    tools:paddingBottom="10dp"
+    tools:paddingTop="10dp"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <ProgressBar
+        android:id="@+id/srl_classics_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/srl_classics_title"
+        android:layout_toLeftOf="@+id/srl_classics_title"
+        android:indeterminate="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/circle_list"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        android:minWidth="20dp"
+        android:minHeight="20dp" />
+
+    <TextView
+        android:id="@+id/srl_classics_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/srl_header_pulling"
+        android:textColor="#888888"
+        android:textSize="@dimen/x11" />
+
+</merge>
