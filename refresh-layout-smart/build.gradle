@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion androidVersions.compileSdkVersion
@@ -24,9 +25,23 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
-    implementation project(':theme')
+    implementation dependenciesList.DimenX2
     implementation dependenciesList.Annotations
     implementation dependenciesList.Recyclerview
     implementation dependenciesList.Appcompat
     implementation dependenciesList.Material
+}
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.refresh.layout'
+                artifactId = 'refreshlib'
+                version = '1.0.1'
+            }
+        }
+    }
 }

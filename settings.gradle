@@ -1,11 +1,5 @@
-include 'bleact'
-include 'blespp'
-include 'bluetoothspp'
-include 'nordic-ble'
-include 'ota'
-include 'protocol'
-include 'scanner'
-include 'applog'
+include 'recyclerview-swipe'
+include 'refresh-layout-smart'
 include 'main'
   
 
