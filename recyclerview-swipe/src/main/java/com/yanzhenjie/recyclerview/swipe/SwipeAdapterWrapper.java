@@ -16,9 +16,11 @@
 package com.yanzhenjie.recyclerview.swipe;
 
 import android.content.Context;
+
 import androidx.collection.SparseArrayCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -151,8 +153,12 @@ public class SwipeAdapterWrapper extends RecyclerView.Adapter<RecyclerView.ViewH
         }
 
         ViewGroup viewGroup = (ViewGroup) swipeMenuLayout.findViewById(R.id.swipe_content);
-        viewGroup.addView(viewHolder.itemView);
-
+        //log error
+        if (viewHolder != null) {
+            if (viewHolder.itemView != null) {
+                viewGroup.addView(viewHolder.itemView);
+            }
+        }
         try {
             Field itemView = getSupperClass(viewHolder.getClass()).getDeclaredField("itemView");
             if (!itemView.isAccessible()) itemView.setAccessible(true);
