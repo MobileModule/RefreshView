@@ -1,0 +1,21 @@
+<resources>
+    <string name="srl_header_pulling">Déroulez pour actualiser</string>
+    <string name="srl_header_refreshing">Rafraîchissant…</string>
+    <string name="srl_header_loading">Attendez que le bas ait fini de charger…</string>
+    <string name="srl_header_release">actualisation de la version</string>
+    <string name="srl_header_finish">Actualisation terminée</string>
+    <string name="srl_header_failed">Échec de l\'actualisation</string>
+    <string name="srl_header_update">dernière mise à jour M-d HH:mm</string>
+    <string name="srl_header_secondary">释放进入二楼</string>
+
+    <string name="srl_footer_pulling">Tirez vers le haut pour charger davantage</string>
+    <string name="srl_footer_release">relâcher la charge immédiatement</string>
+    <string name="srl_footer_loading">Chargement…</string>
+    <string name="srl_footer_refreshing">Attendez que le rafraîchissement de la tête soit terminé…</string>
+    <string name="srl_footer_finish">Chargement terminé</string>
+    <string name="srl_footer_failed">Échec du chargement</string>
+    <string name="srl_footer_nothing">Plus de données</string>
+
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="srl_component_falsify" formatted="false">%s 虚假区域\n代表运行时拖动的高度【%.1fdp】 \n而不会显示任何东西</string>
+</resources>
