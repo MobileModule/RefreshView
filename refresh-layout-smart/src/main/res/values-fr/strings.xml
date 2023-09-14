@@ -5,7 +5,7 @@
     <string name="srl_header_release">actualisation de la version</string>
     <string name="srl_header_finish">Actualisation terminée</string>
     <string name="srl_header_failed">Échec de l\'actualisation</string>
-    <string name="srl_header_update">dernière mise à jour M-d HH:mm</string>
+    <string name="srl_header_update">M-d HH:mm</string>
     <string name="srl_header_secondary">释放进入二楼</string>
 
     <string name="srl_footer_pulling">Tirez vers le haut pour charger davantage</string>
