@@ -5,7 +5,7 @@
     <string name="srl_header_release">リリースリフレッシュ</string>
     <string name="srl_header_finish">更新が完了しました</string>
     <string name="srl_header_failed">更新に失敗しました</string>
-    <string name="srl_header_update">最終更新 M月d日 HH:mm</string>
+    <string name="srl_header_update">最終更新 HH:mm</string>
     <string name="srl_header_secondary">释放进入二楼</string>
 
     <string name="srl_footer_pulling">さらにロードするには引き上げます</string>

@@ -5,7 +5,7 @@
     <string name="srl_header_loading">Wait For Loading…</string>
     <string name="srl_header_finish">Refresh Success</string>
     <string name="srl_header_failed">Refresh Failed</string>
-    <string name="srl_header_update">\'Last Update\' MM-dd HH:mm</string>
+    <string name="srl_header_update">\'Last Update\' HH:mm</string>
     <string name="srl_header_secondary">Release To Second Floor</string>
 
     <string name="srl_footer_pulling">Pull Up To Load More</string>
