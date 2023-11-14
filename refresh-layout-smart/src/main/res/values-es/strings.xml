@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Pull-to-Refresh -->
+    <string name="srl_header_pulling">Tirar para refrescar</string>
+    <string name="srl_header_refreshing">Refrescando...</string>
+    <string name="srl_header_loading">Esperando a que termine de cargar en la parte inferior...</string>
+    <string name="srl_header_release">Soltar para refrescar</string>
+    <string name="srl_header_finish">Refresco completado</string>
+    <string name="srl_header_failed">Fallo al refrescar</string>
+    <string name="srl_header_update">Última actualización HH:mm</string>
+    <string name="srl_header_secondary">Soltar para entrar al segundo piso</string>
+
+    <!-- Load More -->
+    <string name="srl_footer_pulling">Tirar hacia arriba para cargar más</string>
+    <string name="srl_footer_release">Soltar para cargar inmediatamente</string>
+    <string name="srl_footer_loading">Cargando...</string>
+    <string name="srl_footer_refreshing">Esperando a que la parte superior termine de refrescar...</string>
+    <string name="srl_footer_finish">Carga completada</string>
+    <string name="srl_footer_failed">Fallo al cargar</string>
+    <string name="srl_footer_nothing">No hay más datos</string>
+
+    <!-- Other -->
+    <string name="srl_content_empty">No se encontró la vista de contenido en SmartRefreshLayout. ¿Olvidó agregarla en el archivo de diseño XML?</string>
+    <string name="srl_component_falsify" formatted="false">%s Área falsa\nRepresenta la altura arrastrada en tiempo de ejecución [%.1fdp]\nSin mostrar nada</string>
+
+</resources>
