@@ -279,7 +279,12 @@ public class ClassicsHeader extends InternalClassics<ClassicsHeader> implements 
     public ClassicsHeader setLastUpdateTime(Date time) {
         final View thisView = this;
         mLastTime = time;
-        mLastUpdateText.setText(mLastUpdateFormat.format(time));
+        try {
+            mLastUpdateText.setText(mLastUpdateFormat.format(time));
+        }catch (Exception ex){
+            ex.printStackTrace();
+            mLastUpdateText.setText("");
+        }
         if (mShared != null && !thisView.isInEditMode()) {
             mShared.edit().putLong(KEY_LAST_UPDATE_TIME, time.getTime()).apply();
         }
@@ -289,7 +294,12 @@ public class ClassicsHeader extends InternalClassics<ClassicsHeader> implements 
     public ClassicsHeader setTimeFormat(DateFormat format) {
         mLastUpdateFormat = format;
         if (mLastTime != null) {
-            mLastUpdateText.setText(mLastUpdateFormat.format(mLastTime));
+            try {
+                mLastUpdateText.setText(mLastUpdateFormat.format(mLastTime));
+            }catch (Exception ex){
+                ex.printStackTrace();
+                mLastUpdateText.setText("");
+            }
         }
         return this;
     }
