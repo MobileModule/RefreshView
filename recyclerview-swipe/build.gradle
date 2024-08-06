@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+//apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion androidVersions.compileSdkVersion
@@ -22,14 +22,26 @@ dependencies {
     implementation 'com.yanzhenjie:loading:1.0.2'
 }
 
-afterEvaluate {
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = 'com.swipe.recyclerview'
+//                artifactId = 'recyclerview-swipelib'
+//                version = '1.0.1'
+//            }
+//        }
+//    }
+//}
+
+
+if (rootProject.file('gradle/publish-module.gradle').exists()) {
+    apply from: rootProject.file('gradle/publish-module.gradle')
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
-                groupId = 'com.swipe.recyclerview'
-                artifactId = 'recyclerview-swipelib'
-                version = '1.0.1'
+                artifactId = 'recyclerview'
             }
         }
     }

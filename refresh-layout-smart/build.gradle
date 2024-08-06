@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
+//apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion androidVersions.compileSdkVersion
@@ -33,14 +33,26 @@ dependencies {
 }
 
 
-afterEvaluate {
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = 'com.refresh.layout'
+//                artifactId = 'refreshlib'
+//                version = '1.0.1'
+//            }
+//        }
+//    }
+//}
+
+
+if (rootProject.file('gradle/publish-module.gradle').exists()) {
+    apply from: rootProject.file('gradle/publish-module.gradle')
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
-                groupId = 'com.refresh.layout'
-                artifactId = 'refreshlib'
-                version = '1.0.1'
+                artifactId = 'refresh'
             }
         }
     }
